@@ -12,7 +12,7 @@ This project is an end-to-end ETL pipeline that extracts Bitcoin transactions fr
 - **Automation**: Runs hourly via CloudWatch triggers, with S3 event-driven Snowpipe ingestion.
 
 ## Architecture
-![Pipeline Architecture](https://via.placeholder.com/600x300.png?text=BTC+Whale+Tracker+Architecture)  
+![Pipeline Architecture](whale_tracker_etl.png)  
 
 1. **Blockchain.com API**: Fetches latest block transactions → `raw_data/whale_txns_YYYY-MM-DD_HH.json`.  
 2. **AWS Lambda (Extract)**: Pulls data and stores raw JSON in S3.  
